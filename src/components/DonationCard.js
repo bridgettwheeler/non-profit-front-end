@@ -1,11 +1,11 @@
 const DonationCard = ({donation}) => {
     return (
-        <>
-            <h3>First Name{donation.first_name}</h3>
-            <h3>Last Name{donation.last_name}</h3>
-            <h3>Year{donation.year}</h3>
-            <h3>Amount{donation.amount}</h3>
-        </>
+        <tr>
+            <td>{donation.user.first_name ||" first name not assigned"}</td>
+            <td>{donation.user.last_name ||" last name not assigned"}</td>
+            <td>{donation.year}</td>
+            <td>{donation.donation_amount}</td>
+        </tr>
     )
 }
 

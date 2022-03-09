@@ -1,10 +1,29 @@
 import DonationCard from "./DonationCard";
-import Search from "./Search";
 
-const DonationsList = () => {
-    const renderDonations = donations.map(donation => <DonationCard key={donation.id} donation={donation}/>)
+const DonationsList = ({donations}) => {
+    const renderDonations = () => {
+        return (
+            <table>  
+                <thead>    
+                    <tr>      
+                        <th>First Name</th>      
+                        <th>Last Name</th>      
+                        <th>Year</th>      
+                        <th>Amount</th>    
+                    </tr>  
+                </thead>  
+                <tbody>    
+                    {donations.map(donation => <DonationCard key={donation.id} donation={donation}/>)}
+                </tbody>
+            </table>
+        )
+    }
+        
+
+
+        
     return (
-        <div>{renderDonations}</div>
+        <div>{renderDonations()}</div>
     )
 }
 
