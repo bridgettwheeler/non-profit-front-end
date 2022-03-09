@@ -16,6 +16,51 @@ import UsersContainer from "./containers/UsersContainer"
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Navbar />
+        <Header />
+        <Switch >
+          <Route path="/mermberships/new">
+            <MembershipForm />
+          </Route>
+
+          <Route path="/donations/new">
+            <DonationForm />
+          </Route>
+
+          <Route path="/users/new">
+            <UserForm />
+          </Route>
+
+          <Route path="/mermberships/:id">
+            <MembershipCard />
+          </Route>
+
+          <Route path="/donations/:id">
+            <DonationCard />
+          </Route>
+
+          <Route path="/users/:id">
+            <UserCard />
+          </Route>
+
+          <Route path="/mermberships">
+            <MembershipsContainer />
+          </Route>
+
+          <Route path="/donations">
+            <DonationsContainer />
+          </Route>
+
+          <Route path="/users">
+            <UsersContainer />
+          </Route>
+
+        </Switch>
+
+
+
+      </Router>
       
     </div>
   );
