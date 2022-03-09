@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div>Header</div>
+        <div>Girls can do IT!</div>
     )
 }
 
