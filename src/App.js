@@ -6,12 +6,13 @@ import Navbar from "./components/Navbar";
 import DonationCard from "./components/DonationCard";
 import MembershipCard from "./components/MembershipCard";
 import UserCard from "./components/UserCard";
-import DonationForm from "./components/DonationForm.js";
-import MembershipForm from "./components/MembershipForm.js";
+import DonationForm from "./components/DonationForm";
+import MembershipForm from "./components/MembershipForm";
 import UserForm from "./components/UserForm";
-import DonationsContainer from "./containers/DonationsContainer"
-import MembershipsContainer from "./containers/MembershipsContainer"
-import UsersContainer from "./containers/UsersContainer"
+import Search from "./components/Search";
+import DonationsContainer from "./containers/DonationsContainer";
+import MembershipsContainer from "./containers/MembershipsContainer";
+import UsersContainer from "./containers/UsersContainer";
 
 function App() {
   return (
@@ -32,34 +33,15 @@ function App() {
             <UserForm />
           </Route>
 
-          <Route path="/mermberships/:id">
-            <MembershipCard />
+          <Route path="/search">
+           <Search />
           </Route>
 
-          <Route path="/donations/:id">
-            <DonationCard />
-          </Route>
-
-          <Route path="/users/:id">
-            <UserCard />
-          </Route>
-
-          <Route path="/mermberships">
-            <MembershipsContainer />
-          </Route>
-
-          <Route path="/donations">
-            <DonationsContainer />
-          </Route>
-
-          <Route path="/users">
-            <UsersContainer />
+          <Route path="/">
+            <Home />
           </Route>
 
         </Switch>
-
-
-
       </Router>
       
     </div>
