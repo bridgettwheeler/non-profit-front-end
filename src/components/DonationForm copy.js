@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import {useHistory} from 'react-router';
 
-const UserForm = () => {
-    const [user, setUser] = useState({
+const DonationForm = () => {
+    const [donation, setDonation] = useState({
         userID: "",
         amount: "",
         year: "",
@@ -14,22 +14,22 @@ const UserForm = () => {
     }
 
     const handleChange = (e) => {
-        setUser({
-        ...user,
+        setDonation({
+        ...donation,
         [e.target.name]: e.target.value
         })
     }
     
     return (
         <>
-            <h3>Add a User:</h3>
+            <h3>Add a Donation:</h3>
             <form onSubmit={handleSubmit}>
             <label htmlFor="UserID">User ID:</label>
-            <input onChange={handleChange} type="text" name="UserID" value={user.userID} required/><br/><br/>
+            <input onChange={handleChange} type="text" name="UserID" value={donation.userID} required/><br/><br/>
             <label htmlFor="amount">Amount:</label>
-            <input onChange={handleChange} type="number" name="amount" value={user.amount} required/><br/><br/>
+            <input onChange={handleChange} type="number" name="amount" value={donation.amount} required/><br/><br/>
             <label htmlFor="year">Year:</label>
-            <input onChange={handleChange} type="number" name="year" value={user.year} required/><br/><br/>
+            <input onChange={handleChange} type="number" name="year" value={donation.year} required/><br/><br/>
             <input type="submit" value="Add User"/>
 
             </form>
@@ -37,4 +37,4 @@ const UserForm = () => {
     )
 }
 
-export default UserForm
+export default DonationForm
