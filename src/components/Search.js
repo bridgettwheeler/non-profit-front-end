@@ -7,7 +7,13 @@ const Search = () => {
     return (
         <>
             <div>Search</div>
+            <br/>
+            <UsersContainer />
+            <br/>
             <DonationsContainer />
+            <br/>
+            <MembershipsContainer />
+            
         </>
     )
 }

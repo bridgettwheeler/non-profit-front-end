@@ -6,6 +6,7 @@ const DonationsList = ({donations}) => {
             <table>  
                 <thead>    
                     <tr>      
+                        <th>User ID</th>
                         <th>First Name</th>      
                         <th>Last Name</th>      
                         <th>Year</th>      

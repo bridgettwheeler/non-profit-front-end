@@ -6,7 +6,7 @@ const style = {
     padding: "1em",
     textDecoration: "none",
     color: "white",
-    backgroundColor: "rgb(110, 52, 235)",
+    backgroundColor: "rgb(135, 184, 72)",
     fontWeight: "bold",
     verticleAlign: "center"
 }
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div>
             <NavLink activeStyle={{
                 fontWeight: "bolder",
-                color: "rgb(200, 177, 250)"
+                color: "rgb(224, 187, 4)"
             }}
                 exact
                 style={style}
@@ -25,7 +25,7 @@ const Navbar = () => {
 
             <NavLink activeStyle={{
                 fontWeight: "bolder",
-                color: "rgb(200, 177, 250)"
+                color: "rgb(224, 187, 4)"
             }}
                 exact
                 style={style}
@@ -34,7 +34,7 @@ const Navbar = () => {
 
             <NavLink activeStyle={{
                 fontWeight: "bolder",
-                color: "rgb(200, 177, 250)"
+                color: "rgb(224, 187, 4)"
             }}
                 exact
                 style={style}
@@ -43,7 +43,7 @@ const Navbar = () => {
 
             <NavLink activeStyle={{
                 fontWeight: "bolder",
-                color: "rgb(200, 177, 250)"
+                color: "rgb(224, 187, 4)"
             }}
                 exact
                 style={style}
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             <NavLink activeStyle={{
                 fontWeight: "bolder",
-                color: "rgb(200, 177, 250)"
+                color: "rgb(224, 187, 4)"
             }}
                 exact
                 style={style}
