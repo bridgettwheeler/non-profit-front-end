@@ -38,6 +38,7 @@ const DonationForm = () => {
                     alert(data.error)
                     
                 } else {
+                    debugger
                     history.push("/search")
                 }
                 console.log(data)

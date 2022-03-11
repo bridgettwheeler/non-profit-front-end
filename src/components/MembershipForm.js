@@ -3,7 +3,7 @@ import {useHistory} from 'react-router';
 
 const MembershipForm = () => {
     const [membership, setMembership] = useState({
-        userID: "",
+        email: "",
         startDate: "",
         endDate: "",
         year: "",
@@ -15,7 +15,7 @@ const MembershipForm = () => {
     const handleSubmit = e => {
         e.preventDefault()
 
-        if ([membership.userID, membership.startDate, membership.endDate, membership.year].some(val => val.trim() === "")) {            
+        if ([membership.email, membership.startDate, membership.endDate, membership.year].some(val => val.trim() === "")) {            
             alert("You must fill in all the information please!")        
         }
 
@@ -30,7 +30,7 @@ const MembershipForm = () => {
 
                 if (data.error) {
                     setMembership({
-                        userID: "",
+                        email: "",
                         startDate: "",
                         endDate: "",
                         year: "",
@@ -62,8 +62,8 @@ const MembershipForm = () => {
         <>
             <h3>Add a Membership:</h3>
             <form onSubmit={handleSubmit}>
-            <label htmlFor="UserID">User ID:</label>
-            <input onChange={handleChange} type="text" name="UserID" value={membership.userID} required/><br/><br/>
+            <label htmlFor="email">Email:</label>
+            <input onChange={handleChange} type="text" name="email" value={membership.email} required/><br/><br/>
             <label htmlFor="startDate">Start Date:</label>
             <input onChange={handleChange} type="date" name="startDate" value={membership.startDate} required/><br/><br/>
             <label htmlFor="endDate">End Date:</label>

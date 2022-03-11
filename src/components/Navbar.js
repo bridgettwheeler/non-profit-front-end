@@ -29,7 +29,7 @@ const Navbar = () => {
             }}
                 exact
                 style={style}
-                to="/mermberships/new"
+                to="/memberships/new"
             >New Member</NavLink>
 
             <NavLink activeStyle={{

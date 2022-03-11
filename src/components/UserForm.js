@@ -20,7 +20,7 @@ const UserForm = () => {
     const handleSubmit = e => {
         e.preventDefault()
 
-        if ([user.userID, user.firstName, user.lastName, user.address1, user.address2, user.city, user.state, user.zip, user.email, user.phone].some(val => val.trim() === "")) {            
+        if ([user.firstName, user.lastName, user.address1, user.address2, user.city, user.state, user.zip, user.email, user.phone].some(val => val.trim() === "")) {            
             alert("You must fill in all the information please!")        
         }
 
@@ -77,9 +77,21 @@ const UserForm = () => {
             <label htmlFor="firstName">First Name:</label>
             <input onChange={handleChange} type="text" name="firstName" value={user.firstName} required/><br/><br/>
             <label htmlFor="lastName">Last Name:</label>
-            <input onChange={handleChange} type="text" name="lastName" value={user.lastName} required/><br/><br/>
-            <label htmlFor="year">Year:</label>
-            <input onChange={handleChange} type="number" name="year" value={user.year} required/><br/><br/>
+            <input onChange={handleChange} type="text" name="firstName" value={user.lastName} required/><br/><br/>
+            <label htmlFor="address1">Address 1:</label>
+            <input onChange={handleChange} type="text" name="address1" value={user.address1} required/><br/><br/>
+            <label htmlFor="laddress2">Address 2:</label>
+            <input onChange={handleChange} type="text" name="address2" value={user.address2} required/><br/><br/>
+            <label htmlFor="city">City:</label>
+            <input onChange={handleChange} type="text" name="city" value={user.city} required/><br/><br/>
+            <label htmlFor="state">State:</label>
+            <input onChange={handleChange} type="text" name="state" value={user.state} required/><br/><br/>
+            <label htmlFor="zip">Zip:</label>
+            <input onChange={handleChange} type="text" name="zip" value={user.zip} required/><br/><br/>
+            <label htmlFor="email">Email:</label>
+            <input onChange={handleChange} type="text" name="email" value={user.email} required/><br/><br/>
+            <label htmlFor="phone">Phone:</label>
+            <input onChange={handleChange} type="text" name="phone" value={user.phone} required/><br/><br/>
             <input type="submit" value="Add User"/>
 
             </form>
