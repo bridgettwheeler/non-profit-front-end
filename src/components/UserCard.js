@@ -1,7 +1,7 @@
 const UserCard = ({user}) => {
     return (
         <tr>
-            <td>{user.user_id}</td>
+            <td>{user.id}</td>
             <td>{user.first_name ||" first name not assigned"}</td>
             <td>{user.last_name ||" last name not assigned"}</td>
             <td>{user.address_1}</td>

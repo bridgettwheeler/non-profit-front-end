@@ -21,7 +21,7 @@ function App() {
         <Navbar />
         <Header />
         <Switch >
-          <Route path="/mermberships/new">
+          <Route path="/memberships/new">
             <MembershipForm />
           </Route>
 

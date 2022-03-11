@@ -56,7 +56,7 @@ const Navbar = () => {
             }}
                 exact
                 style={style}
-                to="/search/new"
+                to="/search"
             >Search</NavLink>
         </div>
     )

@@ -37,4 +37,4 @@ const DonationForm = () => {
     )
 }
 
-export default DonationForm
+export default Form
