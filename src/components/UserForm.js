@@ -77,11 +77,11 @@ const UserForm = () => {
             <label htmlFor="firstName">First Name:</label>
             <input onChange={handleChange} type="text" name="firstName" value={user.firstName} required/><br/><br/>
             <label htmlFor="lastName">Last Name:</label>
-            <input onChange={handleChange} type="text" name="firstName" value={user.lastName} required/><br/><br/>
+            <input onChange={handleChange} type="text" name="lastName" value={user.lastName} required/><br/><br/>
             <label htmlFor="address1">Address 1:</label>
             <input onChange={handleChange} type="text" name="address1" value={user.address1} required/><br/><br/>
             <label htmlFor="laddress2">Address 2:</label>
-            <input onChange={handleChange} type="text" name="address2" value={user.address2} required/><br/><br/>
+            <input onChange={handleChange} type="text" name="address2" value={user.address2} /><br/><br/>
             <label htmlFor="city">City:</label>
             <input onChange={handleChange} type="text" name="city" value={user.city} required/><br/><br/>
             <label htmlFor="state">State:</label>
