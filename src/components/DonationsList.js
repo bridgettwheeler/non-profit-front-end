@@ -10,7 +10,8 @@ const DonationsList = ({donations}) => {
                         <th>First Name</th>      
                         <th>Last Name</th>      
                         <th>Year</th>      
-                        <th>Amount</th>    
+                        <th>Amount</th>
+                        <th>Delete</th>    
                     </tr>  
                 </thead>  
                 <tbody>    
