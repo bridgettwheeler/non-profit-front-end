@@ -1,6 +1,6 @@
 import DonationCard from "./DonationCard";
 
-const DonationsList = ({donations}) => {
+const DonationsList = ({donations, setDonations}) => {
     const renderDonations = () => {
         return (
             <table>  
@@ -15,7 +15,7 @@ const DonationsList = ({donations}) => {
                     </tr>  
                 </thead>  
                 <tbody>    
-                    {donations.map(donation => <DonationCard key={donation.id} donation={donation}/>)}
+                    {donations.map(donation => <DonationCard key={donation.id} donation={donation} setDonations={setDonations}/>)}
                 </tbody>
             </table>
         )

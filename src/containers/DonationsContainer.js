@@ -21,7 +21,7 @@ const DonationsContainer = () => {
     return (
         <>
             <h2>Donations:</h2>
-            <DonationsList donations={donations}/>
+            <DonationsList donations={donations} setDonations={setDonations}/>
         </>
     ) 
 }
