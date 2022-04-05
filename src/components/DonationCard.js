@@ -6,7 +6,7 @@ const DonationCard = ({donation, setDonations}) => {
             })     
     
                 const data = await resp.json()
-                //debugger
+                
     
                 setDonations(currentDonations => currentDonations.filter(donationObj=> donationObj.id !== donation.id))
     }
